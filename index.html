@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        article {
+            width: 800px;
+            margin: 0 auto;
+            border: 4px solid #ff5e3a;
+            padding: 30px;
+        }
+
+        .playerTimeControlBox span {
+            width: 10%;
+        }
+
+        .playerTimeControlBox input {
+            width: 80%;
+        }
+
+        .lrcBox {
+            min-height: 44px;
+        }
+
+        .volumeRange {
+            width: 100%;
+        }
+
+        input {
+            border: none;
+            outline-style: none;
+        }
+    </style>
+
+
+    <script src="js/index.js"></script>
+    <script src="js/AudioPlayer.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+<article>
+    <h1 class="songName"></h1>
+
+    <section class="lrcBox"></section>
+
+    <section class="playerTimeControlBox">
+        <span>00:00</span>
+        <input type="range" value="0">
+        <span>00:00</span>
+    </section>
+
+    <section class="playerControlBox">
+        <input type="image" width="30px" src="res/img/single.png">
+        <input type="image" src="res/img/skip_last.png" width="40px">
+        <input type="image" src="res/img/play.png" width="40px">
+        <input type="image" src="res/img/skip_next.png" width="40px">
+    </section>
+
+    <input type="range" class="volumeRange" value="100">
+
+</article>
+
+</body>
+</html>
